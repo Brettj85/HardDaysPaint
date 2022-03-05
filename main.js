@@ -7,6 +7,7 @@ $(window).load(function(){
 	xitteration = 0,
 	yitteration = 0,
 	menuExpanded = false;
+	currentOpen = "none";
 	
 	blob = $('#blob'),
 	blobPath = $('#blob-path'),
@@ -27,6 +28,146 @@ $(window).load(function(){
 	$('.menu-inner').on('mouseleave', function(){
 		menuExpanded = false;
 		$(this).parent().removeClass('expanded');
+	});
+
+	$('#about_button').click(function(){
+		menuExpanded = false;
+		$('.menu-inner').parent().removeClass('expanded');
+		if (currentOpen == "none") {
+			$('#about').toggleClass('open');
+			currentOpen = "about";
+		}
+		else {
+			switch (currentOpen) {
+				case "about":
+					$('#about').toggleClass('open');
+					currentOpen = "none";
+					break;
+				case "services":
+					$('#services').toggleClass('open');
+					$('#about').toggleClass('open');
+					currentOpen = "about";
+					break;
+				case "pictures":
+					$('#pictures').toggleClass('open');
+					$('#about').toggleClass('open');
+					currentOpen = "about";
+					break;
+				case "contact":
+					$('#contact').toggleClass('open');
+					$('#about').toggleClass('open');
+					currentOpen = "about";
+					break;
+				default:
+					break;
+			}
+		}
+		
+	});
+
+	$('#services_button').click(function(){
+		menuExpanded = false;
+		$('.menu-inner').parent().removeClass('expanded');
+		if (currentOpen == "none") {
+			$('#services').toggleClass('open');
+			currentOpen = "services";
+		}
+		else {
+			switch (currentOpen) {
+				case "about":
+					$('#about').toggleClass('open');
+					$('#services').toggleClass('open');
+					currentOpen = "services";
+					break;
+				case "services":
+					$('#services').toggleClass('open');
+					currentOpen = "none";
+					break;
+				case "pictures":
+					$('#pictures').toggleClass('open');
+					$('#services').toggleClass('open');
+					currentOpen = "services";
+					break;
+				case "contact":
+					$('#contact').toggleClass('open');
+					$('#services').toggleClass('open');
+					currentOpen = "services";
+					break;
+				default:
+					break;
+			}
+		}
+		
+	});
+
+	$('#pictures_button').click(function(){
+		menuExpanded = false;
+		$('.menu-inner').parent().removeClass('expanded');
+		if (currentOpen == "none") {
+			$('#pictures').toggleClass('open');
+			currentOpen = "pictures";
+		}
+		else {
+			switch (currentOpen) {
+				case "about":
+					$('#about').toggleClass('open');
+					$('#pictures').toggleClass('open');
+					currentOpen = "pictures";
+					break;
+				case "services":
+					$('#services').toggleClass('open');
+					$('#pictures').toggleClass('open');
+					currentOpen = "pictures";
+					break;
+				case "pictures":
+					$('#pictures').toggleClass('open');
+					currentOpen = "none";
+					break;
+				case "contact":
+					$('#contact').toggleClass('open');
+					$('#pictures').toggleClass('open');
+					currentOpen = "pictures";
+					break;
+				default:
+					break;
+			}
+		}
+		
+	});
+
+	$('#contact_button').click(function(){
+		menuExpanded = false;
+		$('.menu-inner').parent().removeClass('expanded');
+		if (currentOpen == "none") {
+			$('#contact').toggleClass('open');
+			currentOpen = "contact";
+		}
+		else {
+			switch (currentOpen) {
+				case "about":
+					$('#about').toggleClass('open');
+					$('#contact').toggleClass('open');
+					currentOpen = "contact";
+					break;
+				case "services":
+					$('#services').toggleClass('open');
+					$('#contact').toggleClass('open');
+					currentOpen = "contact";
+					break;
+				case "pictures":
+					$('#pictures').toggleClass('open');
+					$('#contact').toggleClass('open');
+					currentOpen = "contact";
+					break;
+				case "contact":
+					$('#contact').toggleClass('open');
+					currentOpen = "none";
+					break;
+				default:
+					break;
+			}
+		}
+		
 	});
 
 	function easeOutExpo(currentIteration, startValue, changeInValue, totalIterations) {

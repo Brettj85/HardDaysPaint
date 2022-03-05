@@ -3,7 +3,8 @@ body, html {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background-color: lightgrey;
+    background-color: lightgrey;    
+    font-family: sans-serif;
 }
 
 #menu {
@@ -266,3 +267,103 @@ h2 {
   }
 }
 /*# sourceMappingURL=main.css.map */
+
+#about{
+    height:100vh;;
+    width:75vw;
+    position:absolute;
+    left:-100vw; 
+    display:flex;
+    flex-direction:row;
+}
+
+#services{
+    height:100vh;;
+    width:75vw;
+    position:absolute;
+    left:-100vw; 
+    border:1px solid white; 
+}
+
+#pictures{
+    height:100vh;;
+    width:75vw;
+    position:absolute;
+    left:-100vw; 
+    border:1px solid white; 
+}
+
+#contact{
+    height:100vh;;
+    width:75vw;
+    position:absolute;
+    left:-100vw; 
+    border:1px solid white;  
+}
+.open{
+    left:300px !important;
+    
+}
+.transition{
+    
+  -webkit-transition: left 0.9s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+     -moz-transition: left 0.9s ease-out;  /* Firefox 4-15 */
+       -o-transition: left 0.9s ease-out;  /* Opera 10.50–12.00 */
+          transition: left 0.9s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+
+}
+
+.about_picture_container {
+    width: 40%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about_picture {
+    width:80%;
+    height:40%;
+    background-color:#FFFFFF;
+    border: 2px solid darkgray;
+    border-radius:50%;
+    text-align: center;
+}
+
+.about_text {
+    width:60%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_inner_text {
+    width:90%;
+    background-color: white;
+    border:2px solid darkgray;
+    font-size:18px;
+    padding:20px
+}
+
+.about_title {
+    width:90%;
+    background-color:white;
+    border:2px solid darkgray;
+    font-size:36px;
+    padding:20px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.woman_picture {
+    background-image: url("./pictures/woman_painting.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.man_picture {
+    background-image: url("./pictures/man_painting.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
