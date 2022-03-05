@@ -283,6 +283,7 @@ h2 {
     position:absolute;
     left:-100vw; 
     border:1px solid white; 
+    color:white;
 }
 
 #pictures{
@@ -291,6 +292,7 @@ h2 {
     position:absolute;
     left:-100vw; 
     border:1px solid white; 
+    color:white;
 }
 
 #contact{
@@ -298,7 +300,8 @@ h2 {
     width:75vw;
     position:absolute;
     left:-100vw; 
-    border:1px solid white;  
+    border:1px solid white; 
+    color:white; 
 }
 .open{
     left:300px !important;
