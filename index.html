@@ -7,35 +7,90 @@
     <title>Hard Days Paint</title>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="logo.css">
 </head>
 <body>
-    <div id="menu" class="sticky_menu">
-		<div class="hamburger">
-			<div class="line"></div>
-			<div class="line"></div>
-			<div class="line"></div>
-		</div>
-		<div class="menu-inner">
-			
-			<ul>
-				<li>About</li>
-				<li>Services</li>
-				<li>Our work</li>
-				<li>Contact</li>
-			</ul>
-		</div>
+	<div class="website_container">
+    	<div id="menu">
+			<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<div class="menu-inner">
+				<div class="nav_button_container">
+					<div class="buttons">
+						<button class="blob-btn">
+						  About
+						  <span class="blob-btn__inner">
+							<span class="blob-btn__blobs">
+							  <span class="blob-btn__blob"></span>
+							  <span class="blob-btn__blob"></span>
+							  <span class="blob-btn__blob"></span>
+							  <span class="blob-btn__blob"></span>
+							</span>
+						  </span>
+						</button>
+						<br/>
+						<button class="blob-btn">
+							Services
+							<span class="blob-btn__inner">
+							  <span class="blob-btn__blobs">
+								<span class="blob-btn__blob"></span>
+								<span class="blob-btn__blob"></span>
+								<span class="blob-btn__blob"></span>
+								<span class="blob-btn__blob"></span>
+							  </span>
+							</span>
+						</button>
+						  <br/>
+						  <button class="blob-btn">
+							Our Work
+							<span class="blob-btn__inner">
+							  <span class="blob-btn__blobs">
+								<span class="blob-btn__blob"></span>
+								<span class="blob-btn__blob"></span>
+								<span class="blob-btn__blob"></span>
+								<span class="blob-btn__blob"></span>
+							  </span>
+							</span>
+						  </button>
+						  <br/>
+						  <button class="blob-btn">
+							Contact
+							<span class="blob-btn__inner">
+							  <span class="blob-btn__blobs">
+								<span class="blob-btn__blob"></span>
+								<span class="blob-btn__blob"></span>
+								<span class="blob-btn__blob"></span>
+								<span class="blob-btn__blob"></span>
+							  </span>
+							</span>
+						  </button>
+						  <br/>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+						<defs>
+						  <filter id="goo">
+							<feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+							<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+							<feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+						  </filter>
+						</defs>
+					  </svg>
+				</div>
+			</div>
 		
-		<svg version="1.1" id="blob"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			<path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z"/>
-		</svg>
+			<svg version="1.1" id="blob"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<path id="blob-path" d="M60,500H0V0h60c0,0,20,172,20,250S60,900,60,500z"/>
+			</svg>
+		</div>
+		<div class="scrollable_section logo">
+			<div class="inner_section_full">
+				
+			</div>
+		</div>
 	</div>
-	<div class="header">
-
-	</div>
-	<div class="About">
-		
-	</div>
-
 
 <h2>  </h2>
 </body>

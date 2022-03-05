@@ -19,7 +19,7 @@ $(window).load(function(){
 		y = e.pageY;
 	});
 
-	$('.hamburger, .menu-inner').on('mouseenter', function(){
+	$('.menu-inner').on('mouseenter', function(){
 		$(this).parent().addClass('expanded');
 		menuExpanded = true;
 	});
