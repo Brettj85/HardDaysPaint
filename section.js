@@ -1,24 +1,31 @@
 var aboutSection = document.getElementById('about_section'); 
 var aboutButton = document.getElementById('about_button'); 
 
-$('#about_button').click(function(){
-   $('.scrollable_section').animate({
-       scrollTop: $('.about_section').offset().top},
-       'slow');
+aboutButton.addEventListener("click", function (){
+    aboutSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
-$('#services_button').click(function(){
-   $('.scrollable_section').animate({
-      scrollTop: $('.services_section').offset().top},
-      'slow');
-  });
-$('#pictures_button').click(function(){
-   $('.scrollable_section').animate({
-      scrollTop: $('.pictures_section').offset().top},
-      'slow');
-  });
-$('#contact_button').click(function(){
-   $('.scrollable_section').animate({
-      scrollTop: $('.contact_section').offset().top},
-      'slow');
-  });
+var servicesSection = document.getElementById('services_section'); 
+var servicesButton = document.getElementById('services_button'); 
+
+servicesButton.addEventListener("click", function (){
+    servicesSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
+
+var picturesSection = document.getElementById('pictures_section'); 
+var picturesButton = document.getElementById('pictures_button'); 
+
+picturesButton.addEventListener("click", function (){
+    picturesSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
+var contactSection = document.getElementById('contact_section'); 
+var contactButton = document.getElementById('contact_button'); 
+
+contactButton.addEventListener("click", function (){
+    contactSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
+
+
