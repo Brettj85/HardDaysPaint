@@ -1,3 +1,10 @@
+var header = document.getElementById('header'); 
+var homeButton = document.getElementById('home_button'); 
+
+homeButton.addEventListener("click", function (){
+    header.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
 var aboutSection = document.getElementById('about_section'); 
 var aboutButton = document.getElementById('about_button'); 
 
