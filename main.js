@@ -30,40 +30,23 @@ $(window).load(function(){
 		$(this).parent().removeClass('expanded');
 	});
 
-	// $('#about_button').click(function(){
-	// 	menuExpanded = false;
-	// 	$('.menu-inner').parent().removeClass('expanded');
-	// 	if (currentOpen == "none") {
-	// 		$('#about').toggleClass('open');
-	// 		currentOpen = "about";
-	// 	}
-	// 	else {
-	// 		switch (currentOpen) {
-	// 			case "about":
-	// 				$('#about').toggleClass('open');
-	// 				currentOpen = "none";
-	// 				break;
-	// 			case "services":
-	// 				$('#services').toggleClass('open');
-	// 				$('#about').toggleClass('open');
-	// 				currentOpen = "about";
-	// 				break;
-	// 			case "pictures":
-	// 				$('#pictures').toggleClass('open');
-	// 				$('#about').toggleClass('open');
-	// 				currentOpen = "about";
-	// 				break;
-	// 			case "contact":
-	// 				$('#contact').toggleClass('open');
-	// 				$('#about').toggleClass('open');
-	// 				currentOpen = "about";
-	// 				break;
-	// 			default:
-	// 				break;
-	// 		}
-	// 	}
-		
-	// });
+	$('#about_button').click(function(){
+	 	menuExpanded = false;
+	 	$('.menu-inner').parent().removeClass('expanded');
+	});
+
+	$('#services_button').click(function(){
+		menuExpanded = false;
+		$('.menu-inner').parent().removeClass('expanded');
+	$('#pictures_button').click(function(){
+		menuExpanded = false;
+		$('.menu-inner').parent().removeClass('expanded');
+   	});
+	$('#contact_button').click(function(){
+		menuExpanded = false;
+		$('.menu-inner').parent().removeClass('expanded');
+   	});
+
 
 	// $('#services_button').click(function(){
 	// 	menuExpanded = false;
@@ -168,7 +151,7 @@ $(window).load(function(){
 	// 		}
 	// 	}
 		
-	// });
+ });
 
 	function easeOutExpo(currentIteration, startValue, changeInValue, totalIterations) {
 		return changeInValue * (-Math.pow(2, -10 * currentIteration / totalIterations) + 1) + startValue;

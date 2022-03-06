@@ -1,0 +1,59 @@
+.grey {
+    background-color: rgb(240, 240, 240);
+}
+.about_section {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.about_us {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}
+
+.mission {
+    width:40vw;
+    height:50vh;
+    border: 1px solid #333333;
+    margin-left:20px;
+}
+
+.about_the_operators {
+    width:40vw;
+    height:40vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.the_team {
+    font-size: 36px;
+    text-align: center;
+}
+
+.owner_profile {
+    height:30vh;
+    width:30vh;
+    border:1px solid #333333;
+    border-radius: 50%;
+    margin-right:15px;
+}
+.owner_profile_container {
+    width:40vw;
+    height:40vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+.reviews {
+    width:70vw;
+    height:20vh;
+    border:1px solid #333333;
+}
