@@ -2,7 +2,7 @@ var header = document.getElementById('header');
 var homeButton = document.getElementById('home_button'); 
 
 homeButton.addEventListener("click", function (){
-    header1.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    header.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
 var aboutSection = document.getElementById('about_section'); 
