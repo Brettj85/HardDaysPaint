@@ -115,10 +115,26 @@
   
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
+    background-color: #333333;
     color: white;
     transform: rotateY(180deg);
   } 
+
+  .exterior {
+      background-image: url('./pictures/house2.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      color:white;
+      font-size: 24px;
+      font-weight:bold;
+      display:flex;
+      justify-content: center;
+      align-items: flex-end;
+  }
+
+  .translucent {
+      background-color: rgba(0, 0, 0, 0.733)
+    }
 
   .pictures_section {
     display:flex;
