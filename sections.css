@@ -4,7 +4,7 @@
 .about_section {
     display:flex;
     flex-direction:column;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
 }
 
@@ -16,18 +16,32 @@
 }
 
 .mission {
-    width:40vw;
-    height:50vh;
-    border: 1px solid #333333;
-    margin-left:20px;
+    width:60vw;
+    height:110vh;
+    /* border: 1px solid #333333; */
+    margin-left:60px;
+    margin-top: 10px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    font-family: "Caveat", sans-serif;
+    font-size: 25px;
+}
+
+.mission > div {
+    width:90%;
+    height:auto;
+    text-align: left;
+    margin-bottom: 15px;
 }
 
 .about_the_operators {
-    width:40vw;
-    height:40vh;
+    width:30vw;
+    height:110vh;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items:center;
 }
 
@@ -52,11 +66,76 @@
     align-items:center;
 }
 
+.bullets {
+    width: 30vw;
+    height:60vh;
+    border: 2px solid #333333;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.bullets > div {
+    width:25vw;
+    height:auto;
+    font-family: "Inconsolata", sans-serif;
+    text-align: left;
+    font-size: 15px;
+}
+
+
+
 .reviews {
     width:70vw;
     height:20vh;
     border:1px solid #333333;
 }
+.scroll-parent {
+    position: relative;
+    width: 70vw;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  .scroll-element {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    animation: primary 10s linear infinite;
+  }
+
+.primary {
+    background-color: red;
+    animation: primary 10s linear infinite;
+}
+
+.secondary {
+    background-color:blue;
+    animation: secondary 10s linear infinite;
+}
+
+
+  @keyframes primary {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  
+  @keyframes secondary {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+
 
 .services_section {
     display: flex;
@@ -73,32 +152,27 @@
     align-items:center;
 }
 
- /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
- .flip-card {
+.flip-card {
     background-color: transparent;
     width: 300px;
-    height: 200px;
+    height: 250px;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
     margin-left:20px;
   }
   
-  /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
   
-  /* Position the front and back side */
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -106,19 +180,31 @@
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
-  
-  /* Style the front side (fallback if image is missing) */
+
   .flip-card-front {
     background-color: #bbb;
     color: black;
   }
   
-  /* Style the back side */
   .flip-card-back {
-    background-color: #333333;
-    color: white;
+    background-color: white;  
     transform: rotateY(180deg);
+    border:1px solid black;
+    padding:3px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #333333;
   } 
+
+  .flip-card-back > div {
+    width:90%;
+    height:auto;
+    text-align: left;
+    color: white;
+    border: 1px solid #333333;
+}
 
   .exterior {
       background-image: url('./pictures/house2.png');
@@ -133,7 +219,7 @@
   }
 
   .translucent {
-      background-color: rgba(0, 0, 0, 0.733)
+      background-color: rgba(0, 0, 0, 0.568)
     }
 
   .pictures_section {

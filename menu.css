@@ -99,6 +99,20 @@ h2 {
     text-align: center;
 }
 
+.inner_secton_full_exempt {
+  width:100vw;
+  height:auto;
+  border:1px solid white; 
+  text-align: center;
+}
+
+.inner_secton_full_flipcards {
+  width:100vw;
+  height:110vh;
+  border:1px solid white; 
+  text-align: center;
+}
+
 .nav_button_container {
     width:95%;
     height: 50%;
