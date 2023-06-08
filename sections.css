@@ -88,33 +88,45 @@
 
 .reviews {
     width:70vw;
-    height:20vh;
+    height:40vh;
     border:1px solid #333333;
+    margin-bottom: 15px;
+    overflow:hidden;
 }
 .scroll-parent {
     position: relative;
-    width: 70vw;
+    width: 120vw;
     height: 100%;
     overflow-x: hidden;
   }
-  
+
+  .scroll-parent:hover > .scroll-element{
+    animation-play-state: paused;
+  }
   .scroll-element {
     width: inherit;
     height: inherit;
     position: absolute;
     left: 0%;
     top: 0%;
-    animation: primary 10s linear infinite;
+    animation: primary 30s linear infinite;
+       
   }
 
 .primary {
-    background-color: red;
-    animation: primary 10s linear infinite;
+    animation: primary 30s linear infinite;
+    display:flex;
+    flex-direction: row;
 }
-
+.single_review {
+    width:20vw;
+    height:100%;
+    border:1px solid black;
+}
 .secondary {
-    background-color:blue;
-    animation: secondary 10s linear infinite;
+    animation: secondary 30s linear infinite;
+    display:flex;
+    flex-direction: row;
 }
 
 
