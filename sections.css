@@ -103,18 +103,19 @@
   .scroll-parent:hover > .scroll-element{
     animation-play-state: paused;
   }
-  .scroll-element {
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    animation: primary 30s linear infinite;
-       
-  }
+
+.scroll-element {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  animation: primary 40s linear infinite;
+     
+}
 
 .primary {
-    animation: primary 30s linear infinite;
+    animation: primary 40s linear infinite;
     display:flex;
     flex-direction: row;
 }
@@ -124,7 +125,7 @@
     border:1px solid black;
 }
 .secondary {
-    animation: secondary 30s linear infinite;
+    animation: secondary 40s linear infinite;
     display:flex;
     flex-direction: row;
 }
