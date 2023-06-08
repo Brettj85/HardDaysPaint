@@ -9,14 +9,14 @@ var aboutSection = document.getElementById('about_section');
 var aboutButton = document.getElementById('about_button'); 
 
 aboutButton.addEventListener("click", function (){
-    aboutSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
 var servicesSection = document.getElementById('services_section'); 
 var servicesButton = document.getElementById('services_button'); 
 
 servicesButton.addEventListener("click", function (){
-    servicesSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    servicesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
 
