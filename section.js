@@ -34,3 +34,10 @@ contactButton.addEventListener("click", function (){
     contactSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
+var reviews = document.querySelectorAll('.review_content');
+
+reviews.forEach(review => {
+    review.addEventListener('click', function handleClick(event) {
+        window.location.href = 'https://www.angi.com/companylist/us/ny/liverpool/a-hard-days-paint-reviews-10096506.htm#reviews';
+    });
+  });

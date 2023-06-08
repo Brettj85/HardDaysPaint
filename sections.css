@@ -100,15 +100,14 @@
 
 
 .reviews {
-    width:70vw;
-    height:40vh;
-    border:1px solid #333333;
+    width:85vw;
+    height:30vh;
     margin-bottom: 15px;
     overflow:hidden;
 }
 .scroll-parent {
     position: relative;
-    width: 120vw;
+    width: 240vw;
     height: 100%;
     overflow-x: hidden;
   }
@@ -123,22 +122,18 @@
   position: absolute;
   left: 0%;
   top: 0%;
-  animation: primary 40s linear infinite;
+  animation: primary 120s linear infinite;
      
 }
 
 .primary {
-    animation: primary 40s linear infinite;
-    display:flex;
+    animation: primary 120s linear infinite;
+    display: flex;
     flex-direction: row;
 }
-.single_review {
-    width:20vw;
-    height:100%;
-    border:1px solid black;
-}
+
 .secondary {
-    animation: secondary 40s linear infinite;
+    animation: secondary 120s linear infinite;
     display:flex;
     flex-direction: row;
 }
@@ -162,6 +157,37 @@
     }
   }
 
+.single_review {
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  cursor: pointer;
+}
+
+.review_name {
+    width: 30vw;
+    height: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-right: 15px;
+}
+
+.review_score {
+    width:156px;
+    height:29px;
+    background-image: url('./pictures/rating.png');
+    margin-bottom: 15px;
+}
+
+.review_content {
+    width:30vw;
+    text-align: left;
+}
 
 .services_section {
     display: flex;
