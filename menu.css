@@ -99,6 +99,22 @@ h2 {
     text-align: center;
 }
 
+.inner_secton_half {
+  width:50vw;
+  height:100vh;
+  border:1px solid white; 
+  text-align: center;
+}
+
+.inner_secton_header {
+  width:100vw;
+  height:100vh;
+  border:1px solid white; 
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
 .inner_secton_full_exempt {
   width:100vw;
   height:auto;

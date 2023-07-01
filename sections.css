@@ -104,7 +104,11 @@
     height:30vh;
     margin-bottom: 15px;
     overflow:hidden;
+    background-image: url('./pictures/OIP.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
 }
+
 .scroll-parent {
     position: relative;
     width: 240vw;
@@ -123,7 +127,7 @@
   left: 0%;
   top: 0%;
   animation: primary 120s linear infinite;
-     
+  font-weight: bolder;
 }
 
 .primary {
