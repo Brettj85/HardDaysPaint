@@ -88,15 +88,24 @@
     justify-content: space-evenly;
 }
 
-.bullets > div {
-    width:25vw;
-    height:auto;
+.bullet-point {
+    width: 25vw;
+    height: 15vh;
     font-family: "Inconsolata", sans-serif;
     text-align: left;
     font-size: 20px;
+    display:flex;
+    flex-direction: row;
 }
 
-
+.bullet-image-container {
+  height:30px;
+  width:100px;
+  background-image: url(./pictures/paint-roller.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 
 .reviews {
     width:85vw;
