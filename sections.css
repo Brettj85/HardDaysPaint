@@ -109,12 +109,12 @@
 
 .reviews {
     width:85vw;
-    height:30vh;
+    height:35vh;
     margin-bottom: 15px;
     overflow:hidden;
     background-image: url('./pictures/OIP.jpeg');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:85vw 50vh;
 }
 
 .scroll-parent {
