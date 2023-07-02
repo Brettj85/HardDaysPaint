@@ -1,3 +1,98 @@
+.top {
+width:100%;
+height:5px;
+}
+
+.free-est {
+  font-family: "Inconsolata", sans-serif;
+  overflow:hidden;
+  font-size: 40px;
+  position:fixed;
+  top:0;
+  right:10vw;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+  z-index: 7;
+  cursor:pointer;
+}
+
+.open-free-est {
+  width: 40vw;
+  height: 20vh;
+  right:10vw;
+}
+
+.fold-free-est {
+  width:240px;
+  height:160px;
+  right:5vw;
+}
+
+.free-est-logo {
+  width:240px;
+  height:160px;
+  background-image: url('./pictures/free-est.png');
+  
+}
+
+.free-est-logo-scroll {
+  width:240px;
+  height:160px;
+  position: relative;
+  animation: skew-y-shake 7s infinite ease-in-out;
+}
+
+.fancy-text {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.free-est-logo-scroll::after {
+  content: "";
+  background-image: url('./pictures/free-est.png');
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  position: absolute;
+  z-index: -1;
+}
+
+@keyframes skew-y-shake {
+  0% { transform: skewY(-15deg); }
+  2% { transform: skewY(15deg); }
+  4% { transform: skewY(-15deg); }
+  6% { transform: skewY(15deg); }
+  8% { transform: skewY(0deg); }
+  10% { transform: skewY(0deg); }  
+}
+
+@keyframes pause-between-iterations {
+  /* Other animation is visible for 25% of the time */
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  /* Other animation is hidden for 75% of the time */
+  25.1% {
+    opacity: 0;	
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.disable-element {
+  display:none;
+}
+
 .grey {
     background-color: rgb(240, 240, 240);
 }
@@ -80,31 +175,59 @@
 }
 
 .bullets {
-    width: 30vw;
-    height:100vh;
+    width: 40vw;
+    height:80vh;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content: space-evenly;
+    margin-left: 10px; 
+    margin-top:20vh;   
 }
 
 .bullet-point {
-    width: 25vw;
-    height: 30px;
+    width: 30vw;
+    height: 15%;
     font-family: "Inconsolata", sans-serif;
     text-align: left;
     font-size: 20px;
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
 }
-
+.bullet-point > div {
+  height:100%;
+  width:40vw;
+}
 .bullet-image-container {
-  height:40px;
-  width:60px;
-  background-image: url(./pictures/paint-roller.png);
+  height:48px;
+  width:48px;
+  background-image: url('./pictures/paint-roller.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size:40px;
+  margin-right:15px;
+}
+.bullet-title {
+  width:40vw;
+  display:flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items:flex-end;
+  color:red;
+  font-size:35px;
+}
+
+.bullet-words {
+  width:40vw;
+  display:flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items:flex-start;
+  font-weight: bold;
+}
+
+.bullet-spacer {
+  width:48px;
+  margin-right:60px;
 }
 
 .reviews {
@@ -228,6 +351,8 @@
   border:3px solid #333333;
   background-color: white;
   transition: all 1s ease;
+  display:flex;
+  flex-direction:column;
   justify-content: left;
 }
 
@@ -239,19 +364,22 @@
   width:90vw;
 }
 
+.selection-page-top-bar {
+  padding:10px;
+}
+
 .close-more-details {
-  width:20px;
-  height:23px;
-  font-size: 20px;
-  border-right:3px solid #333333;
-  border-bottom:3px solid #333333;
+  width:50px;
+  height:50px;
   cursor: pointer;
   font-weight: bolder;
+  background-image: url('./pictures/arrow-black.png');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .close-more-details:hover {
-  background-color: #333333;
-  color:white;
+  background-image: url('./pictures/arrow-red.png');
 }
 
 .flip_card_row {

@@ -1,3 +1,39 @@
+var scrollable = document.getElementById('scoll-section');
+
+document.getElementById('call_number').classList.toggle('disable-element')
+
+scrollable.onscroll = function(event) {
+	manageAdvert();
+};
+
+function manageAdvert() {
+    var element = document.getElementById('top');
+	var position = element.getBoundingClientRect();
+    var salesSticky = document.getElementById('free-est');
+    var number = document.getElementById('call_number');
+    var freeEst = document.getElementById('free-estamates');
+	// checking whether fully visible
+    
+	if(position.top >= 0 && position.bottom <= window.innerHeight) {
+		if(salesSticky.classList.contains("fold-free-est")) {
+            salesSticky.classList.toggle('fold-free-est');
+            salesSticky.classList.toggle('open-free-est');
+            number.classList.toggle('disable-element');
+            freeEst.classList.toggle('free-est-logo');
+            freeEst.classList.toggle('free-est-logo-scroll');
+        }
+	}
+    else {
+        if(salesSticky.classList.contains("open-free-est")) {
+            salesSticky.classList.toggle('open-free-est');
+            salesSticky.classList.toggle('fold-free-est');
+            number.classList.toggle('disable-element');
+            freeEst.classList.toggle('free-est-logo');
+            freeEst.classList.toggle('free-est-logo-scroll');
+        }
+    }
+}
+
 var header = document.getElementById('header'); 
 var homeButton = document.getElementById('home_button'); 
 
@@ -31,6 +67,12 @@ var contactSection = document.getElementById('contact_section');
 var contactButton = document.getElementById('contact_button'); 
 
 contactButton.addEventListener("click", function (){
+    contactSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
+var freeQuoteButton = document.getElementById('free-est'); 
+
+freeQuoteButton.addEventListener("click", function (){
     contactSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
