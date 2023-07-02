@@ -69,7 +69,13 @@ height:5px;
   4% { transform: skewY(-15deg); }
   6% { transform: skewY(15deg); }
   8% { transform: skewY(0deg); }
-  10% { transform: skewY(0deg); }  
+  10% { transform: skewY(0deg); }
+  12% { transform: skewY(-15deg); }
+  14% { transform: skewY(15deg); }
+  16% { transform: skewY(-15deg); }
+  18% { transform: skewY(15deg); }
+  20% { transform: skewY(0deg); }
+  22% { transform: skewY(0deg); }  
 }
 
 @keyframes pause-between-iterations {
