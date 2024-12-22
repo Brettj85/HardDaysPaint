@@ -96,6 +96,7 @@ function generateFlipCardContent(id) {
     var detailsBox = document.getElementById('more_details');
     detailsBox.classList.toggle('out-of-view')
     detailsBox.classList.toggle('into-view');
+    generateFlipcardContent(id);
 }
 
 var closeButton = document.getElementById('close_details');
@@ -105,3 +106,34 @@ closeButton.addEventListener("click", function (){
     detailsBox.classList.toggle('out-of-view')
     detailsBox.classList.toggle('into-view');
 });
+
+function generateFlipcardContent(id) {
+    if (id == "exterior") {
+        document.getElementById('detail_title').innerHTML = 'Exterior Painting';
+        document.getElementById('detail_body').innerHTML = 'More info for Exterior Painting';
+    }
+    else if (id == "interior") {
+        document.getElementById('detail_title').innerHTML = 'Interior Painting';
+        document.getElementById('detail_body').innerHTML = 'More info for Interior Painting';
+    }
+    else if (id == "wallpapper") {
+        document.getElementById('detail_title').innerHTML = 'Wallpaper Removal';
+        document.getElementById('detail_body').innerHTML = 'More info for Wallpaper Removal';
+    }
+    else if (id == "powerwash") {
+        document.getElementById('detail_title').innerHTML = 'Power Washing';
+        document.getElementById('detail_body').innerHTML = 'More info for Powerwashing';
+    }
+    else if (id == "stain") {
+        document.getElementById('detail_title').innerHTML = 'Wood Staining';
+        document.getElementById('detail_body').innerHTML = 'More info for Wood Staining';
+    }
+    else if (id == "cabnets") {
+        document.getElementById('detail_title').innerHTML = 'Cabinetry';
+        document.getElementById('detail_body').innerHTML = 'More info for Cabinetry';
+    }
+    else if (id == "mural") {
+        document.getElementById('detail_title').innerHTML = 'Geodesic Murals';
+        document.getElementById('detail_body').innerHTML = 'More info for geodesic murals';
+    }
+}
