@@ -541,6 +541,9 @@ height:5px;
     width:40vw;
     height:60vh;
     border: 1px solid black;
+    background-image: url(pictures/map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .request_blurb {
@@ -579,4 +582,18 @@ height:5px;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+
+@media only screen and (max-width: 640px){
+  .website_container {
+    width: 0px;
+    height:0px;
+    overflow: hidden;
+  }
+
+  .menu {
+    width: 0px;
+    height:0px;
+    overflow: hidden;
+  }
 }
