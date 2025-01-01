@@ -375,6 +375,10 @@ height:5px;
   display:flex;
   flex-direction:column;
   justify-content: left;
+  text-align: left;
+  font-size: 28px;
+  overflow: scroll;
+  padding-left: 10px;
 }
 
 .out-of-view {
@@ -382,11 +386,13 @@ height:5px;
 }
 
 .into-view {
-  width:90vw;
+  width:95vw;
 }
 
 .selection-page-top-bar {
   padding:10px;
+  position: sticky;
+  top:0px;
 }
 
 .close-more-details {
